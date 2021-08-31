@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    
+    <style>
+
+
+ul#Snacks li.Favourite{
+        color: rgb(112, 240, 240);
+        font-weight: bold;
+    }
+    
+    .pasta{
+        color: brown;
+
+    } 
+     li{
+        font-size: 20px;
+        color: black;
+        font-weight: normal;
+   }
+    .pasta{
+        color: rgb(87, 165, 42);
+        
+    }
+    
+    </style>
+    <link rel="stylesheet" href="Specificity.css">
+</head>
+<body>
+    <ul id="Snacks">
+        <li class="Favourite">Maggi</li>
+        <li class="pasta" >Pasta</li>
+        <li>Pizza</li>
+    </ul>
+    
+</body>
+</html>
