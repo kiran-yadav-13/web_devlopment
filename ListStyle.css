@@ -1,0 +1,10 @@
+p,a{
+    color:crimson;
+}
+li{
+list-style-type: style type square;
+}
+.special{
+    color:darkgreen;
+    font-weight: bold;
+}
