@@ -1,0 +1,30 @@
+nav a{
+    text-decoration:none ;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    float:left;
+
+}
+nav {
+    background-color: black;
+    overflow:hidden;
+}
+nav a:hover{
+    color:tomato;
+
+}
+nav a:visited{
+    color:blue;
+    
+}
+.image{
+    border: 2px solid black;
+    width:100px;
+    height: 100px;
+}
+#image1{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
