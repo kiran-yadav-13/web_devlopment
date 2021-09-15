@@ -1,0 +1,15 @@
+span.special{
+    color: blueviolet;
+    font-weight: 800;
+}
+p>em{
+    color: rgb(0, 162, 255);
+}
+h1+p{
+    color:darkgoldenrod;
+    font-weight: bold;
+}
+a:hover{
+    color:darkred;
+    text-decoration:none;
+}
