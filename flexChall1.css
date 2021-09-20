@@ -1,0 +1,29 @@
+.Wrapper_outer{
+    display: flex;
+    flex-flow:row;
+}
+.Wrapper_outer div{
+    background-color: rgb(243, 179, 96);
+    margin: 5px;
+    padding: 40px;
+    width: 100%;
+    color: rgb(17, 16, 16);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+/*.Wrapper{
+    background-color: cornsilk;
+    margin: 5px;
+    flex-grow: 1px;
+    border:2px solid rgb(19, 14, 15);
+}*/
+div.Wrapper{
+    display: flex;
+    padding: 0px;
+    border: none;
+}
+.Wrapper div{
+    flex-grow: 1;
+    background-color: blanchedalmond;
+}
