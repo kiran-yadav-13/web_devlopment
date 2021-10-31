@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title> Transform Css </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            height: 80vh;
+            justify-content: center;
+            background-color: rgb(253, 217, 125);
+        }
+     
+      .box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* background-color: cyan; */
+          border: 2px solid black;
+          height: 300px;
+          width: 300px;
+          transition: all 3s ease-in-out ;
+
+      }
+      .box:hover{
+          /* rotate will  rotate the box */
+          transform: rotate(1080deg);
+          /* skew will side align the box */
+          /* transform: skew(40deg); */
+          /* scale will increase the size of the box */
+          /* transform: scale(2); */
+          /* transform: translateX(123px); */
+          /* transform: translateY(123px); */
+          /* transform: translate(123px,123px); */
+          /* background: url(coder.jpg); */
+          /* opacity: calc(75%); */
+          font-size: 60px;
+
+
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
