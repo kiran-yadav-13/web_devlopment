@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transitions</title>
+    <style>
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(120, 95, 160);
+            transition-property: background-color;
+            transition-duration: 1s;
+            /* ease in : Suru me slow baad me tej */
+            /* transition-timing-function: ease-out; */
+            transition-delay: 2s;
+            /* transition-shorthand */
+            /* transition: background-color 1s ease-in-out 3s; */
+              transition: all 1s ease-in-out 0.2s;
+              border-radius: 50px;
+        }
+        #box:hover{
+            background-color: coral;
+            height: 500px;
+            width: 300px;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS transitions</h3>
+    <div class="Container">
+        <div id="box">
+            This is my box
+        </div>
+
+    </div>
+</body>
+</html>
