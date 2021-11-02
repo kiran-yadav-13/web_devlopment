@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Animation</title>
+    <style>
+    a{
+        background: blue;
+        border-radius: 50%;
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+        font-size: 0.75rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        padding: 1em 2em 1.1em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: top;
+        margin-top: 100px;
+        animation-name: bouncing;
+        animation: bouncing 0.9s ease-in 0s infinite alternate both;
+    }
+    @keyframes bouncing {
+        0%{
+            bottom: 0;
+            box-shadow: 0 0 5px rgb(0, 0, 0, 1);
+        }
+        100%{
+            bottom: 50px;
+            box-shadow: 0;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    
+<a >Loading</a>
+</body>
+</html>
