@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxShadow and TextShadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid black; */
+            margin: 23px 12px;
+            background-color: rgb(238, 189, 205);
+            /* x-ofset y-ofset color  */
+            box-shadow: 10px 13px purple ;
+            /* box-shadow: -10px -13px purple ; */ 
+            /* third parameter is for blur radius by increasing the value of blur radius shadow will blur and will scatter by decreasing its value it will be more crisp */
+            /* box-shadow: 7px 5px 20px purple ; */
+            /* fourth parameter is for spread radius how much colour you want to spread around your box */
+            /* similarly we can give negative offset-x and offset-y so that direction of blur radius will be opposite */
+            /* we can also give the rgba in color instead of rgb a will decide how much dark the color will be  */
+            /* box-shadow: 7px 5px 20px 30px rgba(197, 139, 197, 0.5) ; */
+            /* inset in box shadow will lead to the box shadow inside the box */
+            /* box-shadow: inset 7px 5px 20px rgb(214, 171, 214) ; */
+            /* we can also add multiple box-shadow for 1 box by repeating the syntax */
+            /* box-shadow: 7px 5px  purple , 7px 20px  rgb(139, 175, 80); */
+             
+
+        }
+        .card h2{
+            /* text-shadow: 2px 2px rgb(235, 232, 235); */
+            /* third param is for blur-radius */
+            text-shadow: 3px 4px 2px rgb(235, 232, 235);
+            /* text-shadow: -3px -4px 2px rgb(235, 232, 235); */
+            
+
+
+        }
+    </style>
+</head>
+<body>
+   
+ <div class="container">
+    <div class="card" id="card-1">
+        <h2>card-1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt provident mollitia consectetur molestias maiores reiciendis consequuntur ab, animi quo perferendis iusto suscipit facere rerum? Error magni tempora voluptates quod vitae debitis assumenda dolorem rerum?</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2>card-2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos quia ratione, maxime dicta pariatur, aperiam voluptatibus illo et repellendus itaque non magnam. Aliquid, rem in obcaecati explicabo eligendi voluptatibus molestias quod beatae. Harum.</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>Card-3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nisi consequatur doloremque asperiores? Reprehenderit quaerat autem ducimus maxime vitae tenetur, ipsum esse aspernatur placeat expedita saepe sit natus aperiam ipsam cupiditate. Modi, numquam eos!</p>
+    </div>
+</div>  
+</html>
