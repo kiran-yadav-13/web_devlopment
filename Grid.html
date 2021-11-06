@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .container{
+       /* gid is used to layout the container items in 2-D */
+        display:grid;
+        /* To divide the grids row-wise of (no of sizes=no of rows) the given size*/
+        /* grid-template-rows: 200px 200px 200px; */
+         /* To divide the grids column-wise of (no of sizes=no of column) the given size*/
+        /* grid-template-columns: 200px 200px 200px; */
+        /* by fr we can divide the rows and columns fraction-wise */
+        /* grid-template-columns: 2fr 1fr 1fr; */
+       /* instead of writting sizes to indicate no of rows and column and its size we use repeat 1st-no of times, 2nd-size */
+       /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+        grid-template-columns: repeat(4, 1fr) ;
+       /* Gaps bw rows and columns */
+        grid-gap: 20px;
+        /* by grid-auto properites we are fixing the size of the rows and columns */
+        grid-auto-rows: 100px  ;   
+        /* auto rows and auto columns are without repeat applyling on single element per row */
+        grid-auto-columns: 600px ;  
+        /* By minmax we are specifying what is the minimum and maxi,um size of the columns and rows */
+       
+        /* grid-auto-rows: minmax(100px,auto);
+        grid-auto-columns: minmax(50px,auto); */
+        /* Gap between rows and columns */
+       /* column-gap: 50px;
+      row-gap:90px ; */
+
+
+    }
+    .items{
+        font-size: 30px;
+        background-color: tomato;
+        border: 2px solid black;
+        border-radius: 3px;
+    }
+    #item1{
+        /* To specify from whic row to start and to which row to end */
+        grid-row-start: 2;
+        grid-row-end: 3;
+        /* To specify from which column to start and to which column to end */
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #item-2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .item-1-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nested-items{
+        border: 5px chartreuse solid;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 25)
+        ;
+    }
+    </style>
+
+   
+</head>
+<body>
+    <div class="container">
+      
+        <!-- <div class="items" id="item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error, odio quo consectetur eos, quam ad voluptatibus, voluptatum nemo quisquam nam eum nisi exercitationem quibusdam delectus in nihil qui voluptas dolore velit aperiam rem sunt quae. Dolore odio deserunt ea et neque, voluptas quos error consectetur numquam aperiam optio pariatur reprehenderit, adipisci ab voluptates asperiores amet doloremque quae unde beatae eligendi obcaecati illum ad. Voluptatem atque aspernatur veritatis tempora reprehenderit nihil! Blanditiis ducimus perferendis aliquid sit rerum quasi dolores laboriosam totam labore, officia, commodi, sint ea quia alias. Culpa sapiente rem et impedit voluptates. Minus quod ex eveniet consectetur dolore deserunt quis tenetur praesentium unde impedit sint laboriosam, voluptatem rerum beatae sit veniam tempore illum amet totam. Pariatur error itaque reiciendis ipsa quasi vel, animi dolores inventore libero architecto dignissimos nihil? Suscipit consequuntur porro velit sunt? Nihil sapiente temporibus voluptatem totam libero ipsam quae, nostrum iusto nulla, suscipit obcaecati cupiditate, nam id dignissimos pariatur facilis debitis. Ducimus, quisquam dolorem. Perspiciatis non consequuntur quas doloremque nisi soluta voluptas deserunt deleniti tempore excepturi quibusdam voluptates, veritatis, dolorem dignissimos aperiam beatae! Culpa, corporis illo libero saepe dicta vero molestias, nam eius aliquam facilis eaque impedit fugiat. Expedita iure eaque praesentium voluptate autem officiis!</div> -->
+        <div class="items" id="item1">Dabba-1</div>
+        <div class="items item-1-container" id="item-2">
+            <div class="nested-items">Dabbe me dabba 1</div>
+            <div class="nested-items">Dabbe me dabba 2</div>
+            <div class="nested-items">Dabbe me dabba 3</div>
+
+        </div>
+        <div class="items" id="item-3">Dabba3</div>
+        <div class="items" id="item-4">Dabba4</div>
+        <div class="items" id="item-5">Dabba5</div>
+        <div class="items" id="item-6">Dabba6</div>
+    </div>
+</body>
+</html>
