@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Challenge-2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-auto-rows: 870px;
+            grid-gap: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+       #item-1{
+           background-color: yellow;
+       }
+        .item-container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+             grid-template-rows: 18% 60% 18%; 
+             grid-gap: 12px;
+
+        }
+        .nestedbox{
+            background-color: yellow;
+        }
+        .nestcontainer{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-gap: 10px;
+            background-color: white;
+        }
+
+        .innernesting{
+            background-color: yellow;
+            
+        }
+        .items{
+            padding: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1"> NAV</div>
+        <div class="items item-container">
+            <div class="nestedbox">HEADER</div>
+            <div class="nestedbox nestcontainer">
+                <div class="innernesting">ARTICLE</div>
+                <div class="innernesting">ADS</div>
+            </div>
+            <div class="nestedbox">FOOTER</div>
+        </div>
+    </div>
+</body>
+</html>
