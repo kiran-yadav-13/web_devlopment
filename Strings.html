@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings in javascript</title>
+</head>
+<body>
+    <h1>Strings in javascript</h1>
+</body>
+<script>
+    var strings="thi's"
+    console.log(strings);
+    var name="seema";
+    var work="teacher";
+    var message="seema is a good teacher";
+    var temp= `${name} is a nice person and she is a ${work}`;
+    console.log(temp)
+    console.log(strings + name + work + message)
+    var len=strings.length;
+    console.log(`the lenght of the variable ${len} `)
+    console.log("Hello\\nworld\nHarry\tand")
+    var y=new String("this");
+    console.log(y);
+    // document.getElementById('content').innerHTML='<h3>this is an h3 heading</h3>'
+    var str="this is a string";
+    console.log(str);
+    var position=str.indexOf('is');
+    console.log(position);
+    // substring from a string
+    // var substr=str.slice(1,7);
+    // var substr=str.substring(1,7);
+    // console.log(substr);
+    var substr1=1=str.substr(1,3);
+    console.log(substr1);
+    var replaced=str.replace('string','harry');
+
+
+    // last occurence of a substring
+
+</script>
+</html>
