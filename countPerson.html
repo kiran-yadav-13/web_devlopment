@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(../HTML/pupy.jpg);
+            background-size:cover;
+            font-size: larger;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(224, 146, 77);
+            
+        }
+        #increment-btn{
+            width: 700px;
+            padding: 30px;
+            background-color: brown;
+            color: cornsilk;
+            font-size: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Dogs count</h1>
+    <h2 id="count-el">0</h2>
+    <button id="increment-btn" onclick="increment()"> Increment </button>
+    <script>
+    //    document.getElementById("count-el").innerText=7;
+       let count=0;
+    //    console.log(count);
+    // let bonouspoint=50;
+    // console.log(bonouspoint);
+    // bonouspoint=bonouspoint+50;
+    // console.log(bonouspoint);
+    // bonouspoint=bonouspoint-75;
+    // console.log(bonouspoint);
+    // bonouspoint=bonouspoint+45;
+    // console.log(bonouspoint);
+    function increment(){
+          console.log("Button is clicked")
+    }
+
+
+    </script>
+
+</body>
+</html>
