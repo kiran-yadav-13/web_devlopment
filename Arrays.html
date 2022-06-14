@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <div><h3>Namaste javascript</h1></div>
+    <div><h1><i> The reason of all of your failures is only you</i></h1></div>
+</body>
+<script >
+    const arr=[1,2,3,5,4,5,6];
+    console.log(arr);
+    // length of tyhe array
+    console.log(arr.length)
+    // add element at the last of the array
+    arr.push(20);
+    console.log(arr);
+    // unshift add the elemnt at the begining
+   console.log( arr.unshift(01));
+    // pop - remove element from the begining 
+    console.log(arr.pop());
+    console.log(arr);
+    // indexOf to find the index of specified element
+   console.log( arr.indexOf(5));
+    // LastIndexOf- find the index of first matching element from the last
+    console.log(arr.lastIndexOf(5));
+    // convert arrays of element in the comma seperated values
+    console.log(arr.toString())
+    //push-push a new elementb in last position of  the array
+    console.log(arr.push('mango'))
+    console.log(arr)
+    // changing element bin the array
+    arr[2]={num:80}
+    console.log(arr)
+    //delete elements
+   console.log( delete arr); // doesnot delete the whole array
+    delete arr[1];
+    console.log(arr);
+    // concat is used to merge two or more arrays into other newer one
+    let arr2=["mango", 'aplle','lemons'];
+    let arr3=['skirt','t-shirts', 'shoes'];
+    console.log(arr.concat(arr2, arr3)) 
+    // splice -- used to add the elements 1st argument-where the element should be addded
+    // 2nd argument- how many elements should be removed
+    arr2.splice(0,2,"bath", 'sleep')
+    console.log(arr2)
+    // slice -remove elements
+    console.log(arr)
+    console.log(arr.slice(2,4))
+    console.log(arr)
+    // for loop
+    for(let i=1; i<arr.length; i++){
+        console.log("Array elements : ", arr[i])
+    }
+    // for of
+    for(let element of arr2){
+        console.log("Array elements : ",element)
+    }
+    // for each
+    arr.forEach(function(element, index){
+        console.log(element*2,index)
+    })
+    arr4=[{
+        name:'apple',
+        price:200
+    },
+    {
+        name:'mango',
+        price:100
+    },
+    {
+        name:'orange',
+        price:1000
+    },
+    {
+        name:'litchi',
+        price:100
+    }
+]
+// finding elements in array containing objects
+    console.log(arr4.find(function(element){
+         return element.price==100;
+
+    }));
+
+    // spread operator concatenating  arrays
+
+    let array5=[...arr2,...arr3];
+    console.log(array5)
+    // filter - to find more than 1 matching elements
+    console.log(arr4.filter(element=> element.price==100 ));
+    // map- to perform operation on every elements in the array
+    console.log(arr4.map(element=> element.price*100 ));
+    // join\
+    let ne='abcdef'
+   console.log( arr2.join('*'));
+   console.log( ne.split('_'));
+</script>
+</html>
